@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
@@ -12,24 +11,16 @@
             background-color: #a0d2eb;
             font-family: helvetica, arial, sans-serif;
             font-size: 16px;
-            /*padding-top: 330px;*/
-            @include transition(padding-top .5s ease);
         }
-
-        /* Include the padding and border in an element's total width and height */
 
         * {
             box-sizing: border-box;
         }
 
-        /* Remove margins and padding from the list */
-
         ul {
             margin: 0;
             padding: 0;
         }
-
-        /* Style the list items */
 
         ul li {
             cursor: pointer;
@@ -39,36 +30,26 @@
             background: #ddd;
             font-size: 18px;
             transition: 0.2s;
-
-            /* make the list items unselectable */
             -webkit-user-select: none;
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
         }
 
-        /* Set all odd list items to a different color (zebra-stripes) */
-
         ul li:nth-child(odd) {
             background: #ddd;
         }
-
-        /* Darker background-color on hover */
 
         ul li:hover {
             background: #101357;
             color: white;
         }
 
-        /* When clicked on, add a background color and strike out text */
-
         ul li.checked {
             background: #888;
             color: #fff;
             text-decoration: line-through;
         }
-
-        /* Add a "checked" mark when clicked on */
 
         ul li.checked::before {
             content: '';
@@ -84,7 +65,7 @@
         }
 
         .header {
-            background-color: #3b4d61 ;
+            background-color: #3b4d61;
             width: 100%;
             height: 100px;
             position: relative;
@@ -94,50 +75,51 @@
             color: white;
             text-align: center;
             font-size: 30px;
-
         }
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
 </head>
-
 <body>
-    
-     <div class="p-3 mb-2 bg-primary text-white">
-    <div id="myDIV" class="header">
-    </div></div>
-      <div class="p-3 mb-2 bg-dark text-white">
-    <center>
-     <p>To read the following blogs kindly<a href="https://medium.com/@gokusenset1"> click here.</a></p> </div>
-    <ul id="myUL">
-    </ul>
+    <div class="p-3 mb-2 bg-primary text-white">
+        <div id="myDIV" class="header">
+            <!-- Original feed title removed; add your own title here -->
+            My Blog
+        </div>
+    </div>
+    <div class="p-3 mb-2 bg-dark text-white">
+        <center>
+            <!-- Commented out the Medium blog link -->
+            <!-- <p>To read the following blogs kindly<a href="https://medium.com/@gokusenset1"> click here.</a></p> -->
+            <ul id="myUL">
+                <!-- List items will be populated here if you choose to add your own content -->
+            </ul>
+        </center>
+    </div>
 
     <script>
-        // call the function to start execution
+        // Commented out the original Medium feed fetch to remove Shivam Singh's content
+        /*
         get();
-
-        // function that call the API to get the JSON data
         async function get() {
             var r = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@gokusenset1');
             var data = await r.json();
-
-            // display your title in header
             document.getElementById("myDIV").textContent = data['feed']['title'];
-
-            // iterate the array of items and call the newElement function which add the new list item
             for (var i = 0; i < data['items'].length; i++) {
                 newElement(data['items'][i]['title']);
             }
         }
+        */
 
-        // Create a new list item when clicking on the "Add" button
+        // Function to create a new list item (kept for potential use with your own content)
         function newElement(textContent) {
             var li = document.createElement("li");
             var t = document.createTextNode(textContent);
             li.appendChild(t);
             document.getElementById("myUL").appendChild(li);
         }
+
+        // Optional: Add your own content to the list
+        // Example: newElement("My Blog Post Title");
     </script>
 </body>
-
 </html>
