@@ -234,7 +234,16 @@
                         <img src="prefil1.jpg" alt="">
                     </div>
                     <div>
-                        <h2 class="about__subtitle">I'm Rushikesh Thomre</h2> <!-- Your name -->
+                       <h2 class="about__subtitle" style="
+background: linear-gradient(90deg, #00ED87 0%, #034EA2 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+color: transparent;
+font-weight:700;">
+I'm Rushikesh Thomre
+</h2>
+<!-- Your name -->
                         <p class="about__text"> 
                             I am writing to express my strong interest in the Java Full Stack Developer 
                             position. With my hands on experience in full stack development and my passion 
@@ -251,6 +260,116 @@
                     </div>                                   
                 </div>
             </section>
+
+
+          <!--===== EDUCATION =====-->
+<section class="about section" id="education">
+    <div style="text-align:center; margin-bottom:3rem;">
+         <h2 style="
+        position: relative;
+        display: inline-block;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #034EA2;
+        margin: 0;
+        padding-bottom: 0.8rem;
+    ">
+        Education
+
+        <span style="
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 5px;
+            background-color: #034EA2;
+            border-radius: 3px;
+        "></span>
+    </h2>
+    </div>
+
+    <div class="about__container bd-grid" style="align-items:stretch;">
+
+        <!-- Degree -->
+        <div style="background:#fff; padding:1.8rem; border-radius:14px;
+        box-shadow:0 8px 25px rgba(0,0,0,0.08);
+        display:flex; flex-direction:column; height:100%;">
+            
+            <h3 style="font-weight:700;
+            background: linear-gradient(90deg, #00ED87 0%, #034EA2 100%);
+            -webkit-background-clip:text; -webkit-text-fill-color:transparent;">
+                Bachelor of Engineering – IT
+            </h3>
+
+            <p><b>Sandip Institute of Technology & Research Centre, Nashik</b></p>
+            <p>2021 – 2023</p>
+            <p><b>CGPA:</b> 8.39 / 10</p>
+
+            <p style="margin-top:0.8rem; color:#555; line-height:1.6;">
+                I successfully completed my Bachelor of Information Technology Engineering from Sandip Institute
+                of Technology & Research Centre, Nashik. With an overall CGPA of 8.39, I built a strong foundation
+                in IT and developed a passion for applying technology to solve real-world problems.
+            </p>
+
+            <!-- Hidden Part -->
+            <div class="readMoreContent" style="
+                max-height:0;
+                overflow:hidden;
+                transition:max-height 0.6s ease;">
+                <p style="margin-top:0.8rem; color:#555;">
+                    I am now ready to transition into the corporate world and make a positive impact using my skills.
+                </p>
+            </div>
+
+            <button onclick="toggleReadMore(this)" style="
+                margin-top:1rem;
+                background:transparent;
+                border:none;
+                color:#034EA2;
+                font-weight:600;
+                cursor:pointer;">
+                Read More
+            </button>
+        </div>
+
+        <!-- Diploma -->
+        <div style="background:#fff; padding:1.8rem; border-radius:14px;
+        box-shadow:0 8px 25px rgba(0,0,0,0.08);
+        display:flex; flex-direction:column; height:100%;">
+            
+            <h3 style="font-weight:700;
+            background: linear-gradient(90deg, #00ED87 0%, #034EA2 100%);
+            -webkit-background-clip:text; -webkit-text-fill-color:transparent;">
+                Diploma in Computer Engineering
+            </h3>
+
+            <p><b>Sandip Polytechnic, Nashik</b></p>
+            <p>2018 – 2020</p>
+            <p><b>Percentage:</b> 80.74%</p>
+
+            <p style="margin-top:0.8rem; color:#555; line-height:1.6;">
+                One of the most enjoyable aspects of this diploma was the collaborative learning environment.
+                I worked with passionate students and experienced engineers who helped me build strong technical
+                and practical knowledge in computer engineering.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<script>
+function toggleReadMore(btn) {
+    const content = btn.previousElementSibling;
+    if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+        content.style.maxHeight = "0px";
+        btn.innerText = "Read More";
+    } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        btn.innerText = "Read Less";
+    }
+}
+</script>
 
             <!--===== SKILLS =====-->
             <section class="skills section" id="skills">
