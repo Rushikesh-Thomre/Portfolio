@@ -406,63 +406,78 @@
             </section> 
             
             <!--===== BLOG =====-->
-            <div class="container" id="blog">
-                <section class="work section" id="work">
-                    <div style="text-align: center; margin-bottom: 4rem;">
-    <h2 id="blog" style="position: relative; display: inline-block; font-size: 1.5rem; font-weight: 700; color: #034EA2; margin: 0; padding-bottom: 0.8rem;">
-        My Latest Projects
-        <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 100px; height: 5px; background-color: #034EA2; border-radius: 3px;"></span>
-    </h2>
-</div>
-                    <div class="grid">
-                        <div class="card">
-                            <div class="card_img">
-                                <img src="istockphoto-1256969718-1024x1024.jpg" alt="">
-                            </div>
-                            <div class="card_body">
-                                <h2 class="card_title">Flood Relief</h2>
-                                <p>This is android application for flood relief fund 
-                                    with feature as help in colecting funds for 
-                                    peoples to rebuild there homes, the cost 
-                                    estimation feature and construction guidelines. 
-                                    helps for Hospitality funds, Relief foods & daily 
-                                    need accesories, Help them to grow in learn, 
-                                    train & deploy model.</p>
-                                <a href="https://ijsrd.com/Article.php?manuscript=IJSRDV7I120309" class="read_more">Read article</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card_img">
-                                <img src="block.webp" alt="">
-                            </div>
-                            <div class="card_body">
-                                <h2 class="card_title">Online Signature Verification Using Neural Network</h2>
-                                <p>Even in the digital age, customers still use 
-                                    their signatures as a primary form of 
-                                    authentication for a range of transactions. 
-                                    Their signatures authorize checks, new 
-                                    account paperwork, loan documents, and 
-                                    more, and to minimize the risk of 
-                                    fraud. Discriminates between original and 
-                                    forgeted signature using neural network.</p>
-                                <a href="https://ijarsct.co.in/Paper10987.pdf" class="read_more">Read article</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card_img">
-                                <img src="Heart d.jpg" alt="">
-                            </div>
-                            <div class="card_body">
-                                <h2 class="card_title">Heart Disease Diagnostic Analysis</h2>
-                                <p>Health is real wealth in the pandemic time we all realized the brute effects of covid-19 on all
-                                    irrespective of any status. You are required to analyze this health and medical data for better
-                                    future preparation.</p>
-                                <a href="https://drive.google.com/file/d/1aCzpbZjrgsw4rSHAN37HV3XYMmmZnc6k/view?usp=drive_link" class="read_more">Read article</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+         <div class="container" id="blog" style="width:100%; max-width:1200px; margin:0 auto; padding:0 15px;">
+    <section class="work section" id="work">
+        <div style="text-align:center; margin-bottom:4rem;">
+            <h2 id="blog" style="position:relative; display:inline-block; font-size:1.5rem; font-weight:700; color:#034EA2; margin:0; padding-bottom:0.8rem;">
+                My Latest Projects
+                <span style="position:absolute; bottom:0; left:50%; transform:translateX(-50%); width:100px; height:5px; background-color:#034EA2; border-radius:3px;"></span>
+            </h2>
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:2rem; margin-top:2rem;">
+            <!-- Card 1 -->
+            <div style="background:white; border-radius:10px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.08); transition:transform 0.3s ease, box-shadow 0.3s ease; display:flex; flex-direction:column; height:100%;">
+                <div style="width:100%; height:220px; overflow:hidden;">
+                    <img src="istockphoto-1256969718-1024x1024.jpg" alt="Flood Relief Project" 
+                         style="width:100%; height:100%; object-fit:cover; transition:transform 0.4s ease;">
+                </div>
+                <div style="padding:1.6rem 1.8rem; flex-grow:1; display:flex; flex-direction:column;">
+                    <h2 class="card_title" style="font-size:1.35rem; margin:0 0 1rem 0; color:#034EA2; line-height:1.3;">
+                        Flood Relief
+                    </h2>
+                    <p style="color:#555; line-height:1.6; margin:0 0 1.5rem auto; flex-grow:1;">
+                        This is android application for flood relief fund with feature as help in colecting funds for peoples to rebuild there homes, the cost estimation feature and construction guidelines. helps for Hospitality funds, Relief foods & daily need accesories, Help them to grow in learn, train & deploy model.
+                    </p>
+                    <a href="https://ijsrd.com/Article.php?manuscript=IJSRDV7I120309" 
+                       style="display:inline-block; background:#034EA2; color:white; padding:0.65rem 1.4rem; border-radius:6px; text-decoration:none; font-weight:500; transition:all 0.3s ease; align-self:flex-start;">
+                        Read article
+                    </a>
+                </div>
             </div>
+
+            <!-- Card 2 -->
+            <div style="background:white; border-radius:10px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.08); transition:transform 0.3s ease, box-shadow 0.3s ease; display:flex; flex-direction:column; height:100%;">
+                <div style="width:100%; height:220px; overflow:hidden;">
+                    <img src="block.webp" alt="Signature Verification Project" 
+                         style="width:100%; height:100%; object-fit:cover; transition:transform 0.4s ease;">
+                </div>
+                <div style="padding:1.6rem 1.8rem; flex-grow:1; display:flex; flex-direction:column;">
+                    <h2 style="font-size:1.35rem; margin:0 0 1rem 0; color:#034EA2; line-height:1.3;">
+                        Online Signature Verification Using Neural Network
+                    </h2>
+                    <p style="color:#555; line-height:1.6; margin:0 0 1.5rem auto; flex-grow:1;">
+                        Even in the digital age, customers still use their signatures as a primary form of authentication for a range of transactions. Their signatures authorize checks, new account paperwork, loan documents, and more, and to minimize the risk of fraud. Discriminates between original and forgeted signature using neural network.
+                    </p>
+                    <a href="https://ijarsct.co.in/Paper10987.pdf" 
+                       style="display:inline-block; background:#034EA2; color:white; padding:0.65rem 1.4rem; border-radius:6px; text-decoration:none; font-weight:500; transition:all 0.3s ease; align-self:flex-start;">
+                        Read article
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div style="background:white; border-radius:10px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.08); transition:transform 0.3s ease, box-shadow 0.3s ease; display:flex; flex-direction:column; height:100%;">
+                <div style="width:100%; height:220px; overflow:hidden;">
+                    <img src="Heart d.jpg" alt="Heart Disease Project" 
+                         style="width:100%; height:100%; object-fit:cover; transition:transform 0.4s ease;">
+                </div>
+                <div style="padding:1.6rem 1.8rem; flex-grow:1; display:flex; flex-direction:column;">
+                    <h2 style="font-size:1.35rem; margin:0 0 1rem 0; color:#034EA2; line-height:1.3;">
+                        Heart Disease Diagnostic Analysis
+                    </h2>
+                    <p style="color:#555; line-height:1.6; margin:0 0 1.5rem auto; flex-grow:1;">
+                        Health is real wealth in the pandemic time we all realized the brute effects of covid-19 on all irrespective of any status. You are required to analyze this health and medical data for better future preparation.
+                    </p>
+                    <a href="https://drive.google.com/file/d/1aCzpbZjrgsw4rSHAN37HV3XYMmmZnc6k/view?usp=drive_link" 
+                       style="display:inline-block; background:#034EA2; color:white; padding:0.65rem 1.4rem; border-radius:6px; text-decoration:none; font-weight:500; transition:all 0.3s ease; align-self:flex-start;">
+                        Read article
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
