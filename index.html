@@ -480,40 +480,66 @@
 </div>
 
             <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-               <div style="text-align: center; margin: 0 auto 4rem; max-width: 1200px; padding: 0 15px;">
-    <h2 style="
-        position: relative;
-        display: inline-block;
-        font-size:1.5rem;
-        font-weight: 700;
-        color: #034EA2;
-        margin: 0;
-        padding-bottom: 0.9rem;
-        line-height: 1.2;
-    ">
-        Contact
-        <span style="
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 5px;
-            background-color: #034EA2;
-            border-radius: 3px;
-        "></span>
-    </h2>
-</div>
-                <div class="contact__container bd-grid">
-                    <form action="https://formsubmit.co/rushi.thomare30@gmail.com" method="POST" class="contact__form"> <!-- Your email -->
-                        <input type="text" placeholder="Name" class="contact__input" name="name" required>
-                        <input type="email" placeholder="Email" class="contact__input" name="email" required>
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="submit" value="Submit" class="contact__button button">
-                    </form>
-                </div>
-            </section>
+   <section class="contact section" id="contact">
+    <div style="text-align: center; margin: 0 auto 4rem; max-width: 1200px; padding: 0 15px;">
+        <h2 style="
+            position: relative;
+            display: inline-block;
+            font-size:1.5rem;
+            font-weight: 700;
+            color: #034EA2;
+            margin: 0;
+            padding-bottom: 0.9rem;
+            line-height: 1.2;
+        ">
+            Contact
+            <span style="
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100px;
+                height: 5px;
+                background-color: #034EA2;
+                border-radius: 3px;
+            "></span>
+        </h2>
+    </div>
+
+    <div class="contact__container bd-grid">
+        <!-- Netlify Forms: add name="contact" + netlify attribute -->
+        <form 
+            name="contact" 
+            method="POST" 
+            data-netlify="true" 
+            data-netlify-honeypot="bot-field"
+            class="contact__form"
+        >
+            <!-- Honeypot field - leave empty for humans, bots fill it → spam protection -->
+            <input type="hidden" name="form-name" value="contact" />
+            <p hidden>
+                <label>
+                    Don’t fill this out: <input name="bot-field" />
+                </label>
+            </p>
+
+            <input type="text" placeholder="Name" class="contact__input" name="name" required>
+
+            <input type="email" placeholder="Email" class="contact__input" name="email" required>
+
+            <textarea 
+                name="message" 
+                placeholder="Your Message Here..." 
+                class="contact__input" 
+                rows="10" 
+                required
+                style="min-height: 140px; resize: vertical;"
+            ></textarea>
+
+            <input type="submit" value="Send Message" class="contact__button button">
+        </form>
+    </div>
+</section>
         </main>
 
         <!--===== FOOTER =====-->
