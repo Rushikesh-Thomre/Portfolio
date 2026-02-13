@@ -60,6 +60,10 @@
         ">Skills</a>
     </li>
     <li class="nav__item">
+    <a href="#experience" class="nav__link">Experience</a>
+</li>
+
+    <li class="nav__item">
         <a href="#blog" class="nav__link" style="
             text-decoration: none;
             background: linear-gradient(90deg, #00ED87 0%, #034EA2 100%);
@@ -524,7 +528,112 @@ function toggleReadMore(btn) {
                 </div>
             </section> 
             
-            <!--===== BLOG =====-->
+          <!--===== EXPERIENCE =====-->
+<section class="experience section" id="experience">
+
+<div style="text-align:center; margin-bottom:4rem;">
+    <h2 style="
+        position: relative;
+        display: inline-block;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #034EA2;
+        margin: 0;
+        padding-bottom: 0.8rem;
+    ">
+        Professional Experience
+        <span style="
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 5px;
+            background-color: #034EA2;
+            border-radius: 3px;
+        "></span>
+    </h2>
+</div>
+
+<div class="experience-container">
+
+    <div class="experience-card">
+        <h3>Full Stack Developer</h3>
+        <h4>Manasvi Tech Solutions Pvt. Ltd – Nashik</h4>
+        <p class="exp-duration">Oct 2024 – Present (1.5 Years)</p>
+
+        <ul>
+            <li>Developed RESTful APIs using Spring Boot for HPCL & BPCL enterprise applications.</li>
+            <li>Implemented modular backend architecture for scalable systems.</li>
+            <li>Configured Hibernate & JPA for efficient ORM operations.</li>
+            <li>Designed structured business workflows for secure system access.</li>
+            <li>Handled SQL-based multi-client reporting and analytics modules.</li>
+        </ul>
+    </div>
+
+</div>
+<style>
+    /* Experience Section */
+.experience-container{
+    max-width:1100px;
+    margin:0 auto;
+    padding:0 15px;
+}
+
+.experience-card{
+    background:#fff;
+    padding:2rem;
+    border-radius:14px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    transition:0.3s ease;
+}
+
+.experience-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 30px rgba(0,0,0,0.15);
+}
+
+.experience-card h3{
+    font-size:1.3rem;
+    font-weight:700;
+    background: linear-gradient(90deg, #00ED87 0%, #034EA2 100%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    margin-bottom:0.5rem;
+}
+
+.experience-card h4{
+    font-size:1rem;
+    color:#333;
+    margin-bottom:0.3rem;
+}
+
+.exp-duration{
+    font-size:0.9rem;
+    color:#777;
+    margin-bottom:1rem;
+}
+
+.experience-card ul{
+    padding-left:1.2rem;
+}
+
+.experience-card ul li{
+    margin-bottom:0.6rem;
+    color:#555;
+    line-height:1.6;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .experience-card{
+        padding:1.5rem;
+    }
+}
+
+</style>
+</section>
+
  <!--===== BLOG =====-->
 <div class="container" id="blog" style="width:100%; max-width:1200px; margin:0 auto; padding:0 15px;">
 <section class="work section">
