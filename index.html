@@ -167,7 +167,7 @@
     </a>
 
     <!-- GitHub -->
-   <!-- <a href="https://github.com/Rushikesh-Thomre"
+  <a href="https://github.com/Rushikesh-Thomre"
    target="_blank"
    rel="noopener noreferrer"
    class="github-icon">
@@ -176,38 +176,38 @@
 
 <style>
 .github-icon {
+    position: relative;
+    z-index: 9999;              /* Bring to top */
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background-color: #24292e;
-    color: #ffffff;
+    background: #24292e;
+    color: #fff;
     text-decoration: none;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
-    /* IMPORTANT for mobile */
-    position: relative;
-    z-index: 10;
     cursor: pointer;
-    pointer-events: auto;
+
+    pointer-events: auto;       /* VERY IMPORTANT */
+    touch-action: manipulation; /* Fix mobile tap issue */
     -webkit-tap-highlight-color: transparent;
 }
 
 .github-icon i {
     font-size: 1.6rem;
+    pointer-events: none;       /* Prevent icon blocking click */
 }
 
-/* Hover effect only for desktop */
+/* Hover only desktop */
 @media (hover: hover) {
     .github-icon:hover {
         transform: translateY(-4px);
         box-shadow: 0 8px 20px rgba(36,41,46,0.4);
     }
 }
-</style> -->
+</style>
+
 
 </div>
 
