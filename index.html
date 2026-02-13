@@ -167,62 +167,26 @@
     </a>
 
     <!-- GitHub -->
-  <a href="https://github.com/Rushikesh-Thomre"
-   target="_blank"
-   rel="noopener noreferrer"
-   class="github-icon">
-    <i class='bx bxl-github'></i>
-</a>
-
-<style>
-.github-icon {
-    position: relative;
-    z-index: 9999;              /* Bring to top */
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background: #24292e;
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-
-    pointer-events: auto;       /* VERY IMPORTANT */
-    touch-action: manipulation; /* Fix mobile tap issue */
-    -webkit-tap-highlight-color: transparent;
-}
-
-.github-icon i {
-    font-size: 1.6rem;
-    pointer-events: none;       /* Prevent icon blocking click */
-}
-
-/* Hover only desktop */
-@media (hover: hover) {
-    .github-icon:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 8px 20px rgba(36,41,46,0.4);
-    }
-}
-.home__img {
-    position: relative;
-    z-index: 1;
-}
-
-.home__social {
-    position: relative;
-    z-index: 10;   /* Bring icons above SVG */
-}
-
-/* Extra safety */
-.home__blob {
-    pointer-events: none;  /* SVG will not block clicks */
-}
-</style>
-
-
+    <a href="https://github.com/Rushikesh-Thomre" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       style="
+           display: inline-flex;
+           align-items: center;
+           justify-content: center;
+           width: 48px;
+           height: 48px;
+           border-radius: 50%;
+           background-color: #24292e;
+           color: white;
+           text-decoration: none;
+           transition: all 0.3s ease;
+           box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+       "
+       onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 20px rgba(36,41,46,0.4)'"
+       onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.15)'">
+        <i class='bx bxl-github' style="font-size: 1.6rem;"></i>
+    </a>
 </div>
 
     <div class="home__img">
