@@ -206,6 +206,20 @@
         box-shadow: 0 8px 20px rgba(36,41,46,0.4);
     }
 }
+.home__img {
+    position: relative;
+    z-index: 1;
+}
+
+.home__social {
+    position: relative;
+    z-index: 10;   /* Bring icons above SVG */
+}
+
+/* Extra safety */
+.home__blob {
+    pointer-events: none;  /* SVG will not block clicks */
+}
 </style>
 
 
