@@ -167,26 +167,48 @@
     </a>
 
     <!-- GitHub -->
-    <a href="https://github.com/Rushikesh-Thomre" 
-       target="_blank" 
-       rel="noopener noreferrer"
-       style="
-           display: inline-flex;
-           align-items: center;
-           justify-content: center;
-           width: 48px;
-           height: 48px;
-           border-radius: 50%;
-           background-color: #24292e;
-           color: white;
-           text-decoration: none;
-           transition: all 0.3s ease;
-           box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-       "
-       onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 20px rgba(36,41,46,0.4)'"
-       onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.15)'">
-        <i class='bx bxl-github' style="font-size: 1.6rem;"></i>
-    </a>
+   <a href="https://github.com/Rushikesh-Thomre"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="github-icon">
+    <i class='bx bxl-github'></i>
+</a>
+
+<style>
+.github-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #24292e;
+    color: #ffffff;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    /* IMPORTANT for mobile */
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    pointer-events: auto;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.github-icon i {
+    font-size: 1.6rem;
+}
+
+/* Hover effect only for desktop */
+@media (hover: hover) {
+    .github-icon:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 20px rgba(36,41,46,0.4);
+    }
+}
+</style>
+
 </div>
 
     <div class="home__img">
